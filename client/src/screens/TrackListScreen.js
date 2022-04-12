@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, Button} from 'react-native';
+import {Button, StyleSheet, Text} from 'react-native';
 
 const TrackListScreen = ({navigation}) => {
     return (
@@ -11,6 +11,12 @@ const TrackListScreen = ({navigation}) => {
             />
         </>
     );
+};
+
+TrackListScreen.navigationOptions = () => {
+    return {
+        headerShown: false,
+    };
 };
 
 const styles = StyleSheet.create({});
